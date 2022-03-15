@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+import Box from "../src/components/box";
+
 function App() {
   const [theme, setTheme] = useState("light");
 
@@ -7,6 +9,8 @@ function App() {
 
   return <main className={theme}>
     Texto
+
+    <Box />
     <label>
       <input type="checkbox" checked={theme === "dark"} onChange={handleThemeChange}/>Modo escuro
     </label>
